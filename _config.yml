@@ -1,0 +1,12 @@
+title: Daily Horizon
+description: >-
+  One deliberately off-path idea each morning — history, craft, biology,
+  law, folklore, and the odd corners well outside the day job.
+theme: minima
+show_excerpts: true
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+
+# Posts land in _posts/. Drafts sit in _drafts/ and are NOT built by
+# GitHub Pages, so nothing goes live until a draft is promoted to _posts/.

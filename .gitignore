@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
+
+# Never commit credentials
+.gh-token
+*.token
+*.pat
+.secrets/

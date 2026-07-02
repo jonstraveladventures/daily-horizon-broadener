@@ -1,0 +1,3 @@
+# Drafts land here each morning. GitHub Pages does not build _drafts/,
+# so nothing in this folder is live. Review a draft, then publish it with:
+#   ./publish.sh <draft-filename>
