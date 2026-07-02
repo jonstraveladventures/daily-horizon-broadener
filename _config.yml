@@ -3,7 +3,7 @@ description: >-
   One deliberately off-path idea each morning — history, craft, biology,
   law, folklore, and the odd corners well outside the day job.
 url: "https://jonstraveladventures.github.io"
-baseurl: "/daily-horizon"
+baseurl: "/daily-horizon-broadener"
 theme: minima
 show_excerpts: true
 permalink: /:year/:month/:day/:title/
