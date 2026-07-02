@@ -33,14 +33,14 @@ publish.sh    Promote a reviewed draft to _posts and commit
 2. Add it as the remote and push:
 
    ```bash
-   git remote add origin https://github.com/<username>/daily-horizon.git
+   git remote add origin https://github.com/jonstraveladventures/daily-horizon.git
    git push -u origin main
    ```
 
 3. In the repo: **Settings -> Pages -> Build and deployment**, set
    **Source: Deploy from a branch**, **Branch: `main` / `root`**. Save.
-4. The site appears at `https://<username>.github.io/daily-horizon/` within a
-   minute or two.
+4. The site appears at `https://jonstraveladventures.github.io/daily-horizon/`
+   within a minute or two.
 
 ## Local preview (optional)
 

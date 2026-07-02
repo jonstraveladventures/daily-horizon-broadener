@@ -5,6 +5,9 @@ _site/
 Gemfile.lock
 vendor/
 
+# Internal handoff note — not for the public repo
+HANDOFF.md
+
 # Never commit credentials
 .gh-token
 *.token
