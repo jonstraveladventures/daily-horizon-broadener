@@ -29,17 +29,17 @@ publish.sh    Promote a reviewed draft to _posts and commit
 
 ## One-time GitHub setup
 
-1. Create an empty repository on GitHub (e.g. `daily-horizon`).
+1. Create an empty repository on GitHub (e.g. `daily-horizon-broadener`).
 2. Add it as the remote and push:
 
    ```bash
-   git remote add origin https://github.com/jonstraveladventures/daily-horizon.git
+   git remote add origin https://github.com/jonstraveladventures/daily-horizon-broadener.git
    git push -u origin main
    ```
 
 3. In the repo: **Settings -> Pages -> Build and deployment**, set
    **Source: Deploy from a branch**, **Branch: `main` / `root`**. Save.
-4. The site appears at `https://jonstraveladventures.github.io/daily-horizon/`
+4. The site appears at `https://jonstraveladventures.github.io/daily-horizon-broadener/`
    within a minute or two.
 
 ## Local preview (optional)
