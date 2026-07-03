@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "In Edo, the most valuable thing a poor man made all day was left in the privy — and it belonged to his landlord"
+title: "In Edo, the most valuable thing a tenant produced all day was left in the privy, and it belonged to his landlord"
 date: 2026-07-01 09:00:00 +0200
 domain: Urban / economic history
 tags: [history, economics, japan, sanitation]
@@ -11,7 +11,7 @@ Picture a back-alley tenement in eighteenth-century Edo, a city of more than a m
 
 Farmers ringing the city needed nitrogen. A dense human population produces nitrogen continuously. So a market grew to move one to the other, and it was not a grim public-health chore but a genuine trade with contracts, routes, and seasonal pricing. Farmers walked into the city and paid for the right to empty a household's privy, settling up in coin or in vegetables. Over generations this hardened into property. In the tenement blocks, the waste from the shared toilet was not the tenants' to give away. It belonged to the landlord. He sold it. A landlord with enough tenants could clear thirty or forty ryō a year from what his renters left behind — roughly twice a working carpenter's annual income. Rent was reckoned partly on the traffic through the privy. When a tenant moved out, the rent on the remaining rooms could go up, because the landlord now had less to sell.
 
-Then it gets stranger, and more revealing about how markets price anything. The waste was graded by quality, and quality tracked diet. The excrement of a rich household, fed on fish and white rice, fetched more than that of the poor, because more nutrient survived the richer gut. At the top of the ladder sat the leavings of feudal lords' estates, where the servants ate well and it showed in the ledger. Osaka pushed the logic to a fine point: landlords held the rights to their tenants' solid waste, but the tenants kept the rights to their own urine, which was worth less and so was left to them. Your body, on this accounting, produced two commodities of different grade, and you owned only the cheaper one.
+Then it gets stranger, and more revealing about how markets price anything. The waste was graded by quality, and quality tracked diet. The excrement of a wealthy household, fed on fish and white rice, fetched more than that of a poorer one living on millet and barley, because more nutrient survived the richer diet. At the top of the ladder sat the leavings of feudal lords' estates, where the servants ate well and it showed in the ledger. Osaka pushed the logic to a fine point: landlords held the rights to their tenants' solid waste, but the tenants kept the rights to their own urine, which was worth less and so was left to them. Your body, on this accounting, produced two commodities of different grade, and you owned only the cheaper one.
 
 Where there is money there is turf. City guilds formed to run collection and fix prices; farmers' associations formed to break the monopolies. In 1724 whole villages went to law over who had the right to collect from which districts of Osaka. People stole night soil. A substance we now pay to make disappear was, there and then, worth guarding and litigating over.
 

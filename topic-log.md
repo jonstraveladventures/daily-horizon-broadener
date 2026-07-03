@@ -14,6 +14,7 @@ primary domain that appears in the last ~10 rows.
 | 2026-07-01 | Economic / urban history   | Edo night-soil economy                     | published |
 | 2026-07-02 | Law / legal history        | Deodand — accidental REPEAT of 06-30       | duplicate; do not reuse |
 | 2026-07-02 | Linguistics / anthropology | Damin (Demiin) — Lardil initiation register | published |
+| 2026-07-02 | Anthropology & ritual      | Nkisi nkondi (Kongo nail power figure) — seed 56461 | draft |
 
 Recent domains lean heavily historical (law, economic, natural history) and
 one topic (deodand) was used twice. Next runs should push hard into
