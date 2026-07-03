@@ -7,6 +7,9 @@ baseurl: "/daily-horizon-broadener"
 theme: minima
 show_excerpts: true
 permalink: /:year/:month/:day/:title/
+# Build posts dated later today too — the generator stamps them 09:00, which is
+# in the future at build time if published earlier in the morning.
+future: true
 plugins:
   - jekyll-feed
 
