@@ -4,14 +4,25 @@ description: >-
   law, folklore, and the odd corners well outside the day job.
 url: "https://jonstraveladventures.github.io"
 baseurl: "/daily-horizon-broadener"
-theme: minima
-show_excerpts: true
+# Custom "Broadsheet" theme lives in _layouts / _includes / assets — no gem theme.
 permalink: /:year/:month/:day/:title/
 # Build posts dated later today too — the generator stamps them 09:00, which is
 # in the future at build time if published earlier in the morning.
 future: true
 plugins:
   - jekyll-feed
+
+# Keep internal files out of the published site.
+exclude:
+  - HANDOFF.md
+  - README.md
+  - topic-log.md
+  - publish.sh
+  - design_handoff_daily_horizon_broadsheet/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
 
 # Posts land in _posts/. Drafts sit in _drafts/ and are NOT built by
 # GitHub Pages, so nothing goes live until a draft is promoted to _posts/.

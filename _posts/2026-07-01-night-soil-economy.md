@@ -3,6 +3,7 @@ layout: post
 title: "In Edo, the most valuable thing a tenant produced all day was left in the privy, and it belonged to his landlord"
 date: 2026-07-01 09:00:00 +0200
 domain: Urban / economic history
+category: Cities
 tags: [history, economics, japan, sanitation]
 excerpt: "A city of a million people with no sewers should have been a cholera pit. It was one of the cleanest on earth, because its excrement was a graded, landlord-owned cash crop."
 ---

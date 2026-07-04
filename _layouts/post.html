@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="topbar">
+  <a href="{{ '/' | relative_url }}">← Daily Horizon</a>
+  <span>{{ page.date | date: "%A, %B %-d, %Y" }}</span>
+</div>
+
+<header class="article-header measure">
+  <div class="kicker">{{ page.category | default: page.domain }}</div>
+  <h1>{{ page.title }}</h1>
+  {%- if page.excerpt -%}<p class="standfirst">{{ page.excerpt | strip_html | strip }}</p>{%- endif -%}
+  {%- assign words = content | number_of_words -%}
+  {%- assign mins = words | divided_by: 200 | plus: 1 -%}
+  <div class="meta">
+    <span class="hair"></span>
+    <span>{{ mins }} min read</span>
+    <span class="hair"></span>
+  </div>
+</header>
+
+<div class="post-body">
+  {{ content }}
+</div>
+
+{%- if page.sources -%}
+<div class="sources">
+  <div class="s-label">Sources</div>
+  <ul>
+    {%- for s in page.sources -%}
+    <li>{% if s.url %}<a href="{{ s.url }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}{% if s.publisher %} — <span class="pub">{{ s.publisher }}</span>{% endif %}</li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}

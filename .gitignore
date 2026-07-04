@@ -1,9 +1,12 @@
 _site/
+.DS_Store
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+Gemfile
 Gemfile.lock
 vendor/
+.bundle/
 
 # Internal handoff note — not for the public repo
 HANDOFF.md

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% include masthead.html %}
+
+{%- assign lead = site.posts.first -%}
+{%- if lead -%}
+{%- assign lead_text = lead.content | strip_html | strip | truncatewords: 55 -%}
+<article class="lead">
+  <div class="kicker">Today's Idea · {{ lead.date | date: "%B %-d" }}</div>
+  <h2><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h2>
+  <div class="excerpt">
+    <p><span class="dropcap">{{ lead_text | slice: 0, 1 }}</span>{{ lead_text | slice: 1, 100000 }}</p>
+  </div>
+  <a class="more" href="{{ lead.url | relative_url }}">Continue reading →</a>
+</article>
+{%- endif -%}
+
+{%- assign total = site.posts | size -%}
+{%- assign restn = total | minus: 1 -%}
+{%- if restn > 0 -%}
+{%- assign half = restn | plus: 1 | divided_by: 2 -%}
+<section class="index">
+  <div class="col">
+    {%- for post in site.posts -%}
+      {%- unless forloop.first -%}
+        {%- if forloop.index0 <= half -%}
+    <div class="entry">
+      <div class="elabel">{{ post.date | date: "%B %-d" }} · {{ post.category | default: post.domain }}</div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {%- if post.excerpt -%}<p>{{ post.excerpt | strip_html | strip }}</p>{%- endif -%}
+    </div>
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  </div>
+  <div class="divider"></div>
+  <div class="col">
+    {%- for post in site.posts -%}
+      {%- unless forloop.first -%}
+        {%- if forloop.index0 > half -%}
+    <div class="entry">
+      <div class="elabel">{{ post.date | date: "%B %-d" }} · {{ post.category | default: post.domain }}</div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {%- if post.excerpt -%}<p>{{ post.excerpt | strip_html | strip }}</p>{%- endif -%}
+    </div>
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% include subscribe.html %}

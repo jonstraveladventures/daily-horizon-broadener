@@ -1,0 +1,226 @@
+---
+# Front matter (even empty) tells Jekyll to process this SCSS into CSS.
+---
+
+/* ============================================================
+   Daily Horizon — "The Broadsheet" (direction 1a)
+   Print-editorial theme. Typography carries the design.
+   ============================================================ */
+
+:root {
+  --paper:    #f7f9fb;  /* page background */
+  --ink:      #17272e;  /* masthead, heavy rules, box borders */
+  --accent:   #31708e;  /* links, kickers, drop caps, button */
+  --accent-d: #2a6079;  /* button hover (~8% darker) */
+  --body:     #223037;  /* article body text */
+  --body-alt: #26343a;  /* lead-story column text */
+  --muted:    #4a5860;  /* deks, tagline */
+  --muted-2:  #5c6b71;  /* standfirst, source list */
+  --faint:    #7c8a90;  /* small-caps labels, dates, folio */
+  --rule:     #d5dee1;  /* hairline rules */
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* The sheet: a centred ~880px column of "paper". */
+.sheet { max-width: 880px; margin: 0 auto; padding: 44px 60px 64px; }
+
+/* ---------- shared bits ---------- */
+.serif  { font-family: 'Playfair Display', Georgia, serif; }
+.label  { font-family: 'Newsreader', serif; text-transform: uppercase; }
+
+/* ---------- folio strip ---------- */
+.folio {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--faint); padding-bottom: 14px; border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- masthead ---------- */
+.masthead { text-align: center; padding: 30px 0 10px; }
+.masthead .title {
+  display: inline-block; margin: 0; color: var(--ink);
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 82px; line-height: 0.95; letter-spacing: -0.01em;
+}
+.masthead .title:hover { text-decoration: none; }
+
+.tagline {
+  border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+  padding: 12px 0; margin-top: 8px; text-align: center;
+}
+.tagline p { margin: 0; font-style: italic; font-size: 18px; color: var(--muted); }
+
+.nav {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 34px;
+  padding: 16px 0 4px; border-bottom: 1px solid var(--ink);
+  font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+}
+.nav a { color: var(--accent); }
+.nav .sep { color: var(--rule); }
+
+/* ---------- lead story ---------- */
+.lead { padding: 38px 0 34px; border-bottom: 1px solid var(--rule); }
+.lead .kicker {
+  font-size: 12.5px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 12px;
+}
+.lead h2 {
+  margin: 0 0 16px; max-width: 15ch;
+  font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 44px; line-height: 1.06; letter-spacing: -0.01em;
+}
+.lead h2 a { color: var(--ink); }
+.lead h2 a:hover { color: var(--accent); text-decoration: none; }
+.lead .excerpt {
+  column-count: 2; column-gap: 40px;
+  font-size: 16.5px; line-height: 1.62; color: var(--body-alt);
+}
+.lead .excerpt p { margin: 0; }
+.lead .more { margin-top: 16px; font-style: italic; font-size: 15px; color: var(--accent); }
+
+.dropcap {
+  float: left; color: var(--accent);
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 70px; line-height: 0.72; padding: 6px 10px 0 0;
+}
+
+/* ---------- secondary index ---------- */
+.index { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0 40px; padding-top: 30px; }
+.index .divider { background: var(--rule); }
+.index .col { display: flex; flex-direction: column; }
+.index .entry + .entry { border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 22px; }
+.entry .elabel {
+  font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--faint); margin-bottom: 7px;
+}
+.entry h3 {
+  margin: 0 0 8px; font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 21px; line-height: 1.16;
+}
+.index .entry:first-child h3 { font-size: 24px; line-height: 1.14; }
+.entry h3 a { color: var(--ink); }
+.entry h3 a:hover { color: var(--accent); text-decoration: none; }
+.entry p { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+
+/* archive: single-column full list */
+.post-list { max-width: 640px; margin: 0 auto; }
+.post-list .entry { padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.post-list .entry:first-child { padding-top: 30px; }
+
+/* ---------- subscribe ---------- */
+.subscribe { margin-top: 44px; border: 1.5px solid var(--ink); padding: 2px; }
+.subscribe .inner { border: 1px solid var(--ink); padding: 28px 34px; display: flex; align-items: center; gap: 32px; }
+.subscribe .s-left { flex: 1; }
+.subscribe .s-kicker { font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.subscribe h4 { margin: 0 0 4px; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 26px; }
+.subscribe .s-sub { margin: 0; font-style: italic; font-size: 15px; color: var(--muted); }
+.subscribe .s-right { display: flex; flex-direction: column; gap: 10px; width: 230px; }
+.subscribe .s-field { border-bottom: 1px solid var(--ink); padding-bottom: 8px; font-size: 15px; color: var(--faint); }
+.subscribe .s-btn {
+  display: block; width: 100%; background: var(--accent); color: var(--paper);
+  text-align: center; padding: 11px; border: 0; cursor: pointer;
+  font-family: 'Newsreader', serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+}
+.subscribe .s-btn:hover { background: var(--accent-d); text-decoration: none; }
+.subscribe .s-rss { text-align: center; font-style: italic; font-size: 13px; color: var(--faint); }
+
+/* ---------- article / secondary pages top bar ---------- */
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 14px; border-bottom: 1px solid var(--ink);
+  font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint);
+}
+.topbar a { color: var(--accent); }
+
+.measure { max-width: 640px; margin: 0 auto; }
+
+.article-header { text-align: center; padding-top: 48px; }
+.article-header .kicker { font-size: 12.5px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+.article-header h1 {
+  margin: 0 0 22px; font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 46px; line-height: 1.08; letter-spacing: -0.01em;
+}
+.article-header .standfirst { font-style: italic; font-size: 15px; color: var(--muted-2); margin: 0 0 6px; }
+.meta {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+  font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint);
+  margin: 22px 0 10px;
+}
+.meta .hair { width: 40px; height: 1px; background: var(--rule); }
+
+/* ---------- post body (rendered from Markdown) ---------- */
+.post-body { max-width: 640px; margin: 0 auto; font-size: 19px; line-height: 1.72; color: var(--body); }
+.post-body > p { margin: 24px 0 0; }
+.post-body > p:first-of-type { margin-top: 34px; }
+.post-body > p:first-of-type::first-letter {
+  float: left; color: var(--accent);
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 86px; line-height: 0.68; padding: 10px 12px 0 0;
+}
+.post-body em, .post-body i { font-style: italic; }
+.post-body a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(49,112,142,0.35); text-underline-offset: 2px; }
+.post-body a:hover { text-decoration-color: var(--accent); }
+.post-body h2, .post-body h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--ink); margin: 40px 0 0; }
+.post-body h2 { font-size: 28px; line-height: 1.2; }
+.post-body h3 { font-size: 22px; line-height: 1.24; }
+.post-body blockquote {
+  margin: 34px 0; padding: 6px 0 6px 26px; border-left: 2px solid var(--accent);
+  font-style: italic; color: var(--accent); font-size: 22px; line-height: 1.5;
+}
+.post-body hr { border: 0; border-top: 1px solid var(--rule); margin: 44px 0 0; }
+
+/* Sources: authored in Markdown as a "Sources" line + list at the tail.
+   Style the trailing list to sit apart like the designed sources block. */
+.post-body ul { list-style: none; margin: 14px 0 0; padding: 0; }
+.post-body ul li { margin: 0 0 7px; font-size: 15px; line-height: 1.5; color: var(--muted-2); }
+.post-body ul li a { text-decoration: none; }
+
+/* Optional structured sources block (front-matter `sources:` list). */
+.sources { max-width: 640px; margin: 44px auto 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+.sources .s-label { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.sources ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.sources li { font-size: 15px; color: var(--muted-2); }
+.sources li .pub { color: var(--accent); font-style: italic; }
+
+/* ---------- page prose (About, etc.) ---------- */
+.page-body { max-width: 640px; margin: 0 auto; font-size: 19px; line-height: 1.72; color: var(--body); }
+.page-body p { margin: 24px 0 0; }
+.page-body a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* ---------- footer ---------- */
+.foot {
+  margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule);
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+  font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint);
+}
+.foot a { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 720px) {
+  .sheet { padding: 28px 24px 44px; }
+  .masthead .title { font-size: clamp(44px, 12vw, 82px); }
+  .tagline p { font-size: 16px; }
+  .lead h2 { font-size: 34px; max-width: none; }
+  .lead .excerpt { column-count: 1; }
+  .article-header h1 { font-size: 34px; }
+  .index { grid-template-columns: 1fr; gap: 0; }
+  .index .divider { display: none; }
+  .index .col + .col .entry:first-child { border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 22px; }
+  .subscribe .inner { flex-direction: column; align-items: stretch; gap: 20px; }
+  .subscribe .s-right { width: 100%; }
+}

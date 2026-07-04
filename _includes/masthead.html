@@ -1,0 +1,21 @@
+<div class="folio">
+  <span>Est. MMXXVI</span>
+  <span>Vol. I · Nº {{ site.posts.size }}</span>
+  <span>{{ site.time | date: "%A, %B %-d, %Y" }}</span>
+</div>
+
+<div class="masthead">
+  <a class="title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+</div>
+
+<div class="tagline">
+  <p>{{ site.description | strip_newlines }}</p>
+</div>
+
+<nav class="nav">
+  <a href="{{ '/about/' | relative_url }}">About</a>
+  <span class="sep">·</span>
+  <a href="{{ '/archive/' | relative_url }}">The Archive</a>
+  <span class="sep">·</span>
+  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+</nav>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title | strip_html }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.description | strip_newlines | truncate: 60 }}{% endif %}</title>
+  {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | escape }}">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {%- feed_meta -%}
+</head>
+<body>
+  <main class="sheet">
+    {{ content }}
+
+    <footer class="foot">
+      <span>Daily Horizon · One idea each morning</span>
+      <span><a href="{{ '/about/' | relative_url }}">About</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></span>
+    </footer>
+  </main>
+</body>
+</html>
