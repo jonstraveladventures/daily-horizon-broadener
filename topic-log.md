@@ -16,6 +16,7 @@ primary domain that appears in the last ~10 rows.
 | 2026-07-02 | Linguistics / anthropology | Damin (Demiin) — Lardil initiation register | published |
 | 2026-07-02 | Anthropology & ritual      | Nkisi nkondi (Kongo nail power figure) — seed 56461 | draft |
 | 2026-07-03 | Body, mind & medicine      | Blushing as an honest evolutionary signal — seed 82853 | published |
+| 2026-07-04 | Play, games & performance  | Suicide King — copying-error in playing cards — seed 98301 | published |
 
 Recent domains lean heavily historical (law, economic, natural history) and
 one topic (deodand) was used twice. Next runs should push hard into
