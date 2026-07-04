@@ -3,6 +3,8 @@ layout: default
 ---
 {% include masthead.html %}
 
+<p class="ai-note">Every essay here is written by AI and reviewed by a human before it is published.</p>
+
 {%- assign lead = site.posts.first -%}
 {%- if lead -%}
 {%- assign lead_text = lead.content | strip_html | strip | truncatewords: 55 -%}

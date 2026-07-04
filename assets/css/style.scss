@@ -73,6 +73,12 @@ a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-under
 .nav a { color: var(--accent); }
 .nav .sep { color: var(--rule); }
 
+/* ---------- AI disclosure note (home) ---------- */
+.ai-note {
+  text-align: center; margin: 16px 0 0;
+  font-style: italic; font-size: 13.5px; color: var(--muted); letter-spacing: 0.01em;
+}
+
 /* ---------- lead story ---------- */
 .lead { padding: 38px 0 34px; border-bottom: 1px solid var(--rule); }
 .lead .kicker {
