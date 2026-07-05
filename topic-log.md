@@ -17,7 +17,7 @@ or still-true fact.
 | 2026-07-01 | Economic / urban history   | [hist] | Edo night-soil economy                  | published |
 | 2026-07-02 | Law / legal history        | [hist] | Deodand — accidental REPEAT of 06-30    | duplicate; do not reuse |
 | 2026-07-02 | Linguistics / anthropology | [hist] | Damin (Demiin) — Lardil initiation register | published |
-| 2026-07-02 | Anthropology & ritual      | [hist] | Nkisi nkondi (Kongo nail power figure) — seed 56461 | draft |
+| 2026-07-02 | Anthropology & ritual      | [hist] | Nkisi nkondi (Kongo nail power figure) — seed 56461 | published |
 | 2026-07-03 | Body, mind & medicine      | [how]  | Blushing as an honest evolutionary signal — seed 82853 | published |
 | 2026-07-04 | Play, games & performance  | [hist] | Suicide King — copying-error in playing cards — seed 98301 | published |
 | 2026-07-05 | Life sciences              | [now]  | Coral mass spawning — one synchronised night — seed 22556 | published |

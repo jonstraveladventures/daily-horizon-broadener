@@ -3,6 +3,7 @@ layout: post
 title: "The wooden judge that remembered every oath in nails"
 date: 2026-07-02 09:00:00 +0200
 domain: anthropology & ritual
+category: Ritual
 tags: [ritual, objects, law, congo, material-religion]
 excerpt: "A contract you cannot read, an archive made of iron, and a bailiff carved from wood — all the same object."
 ---

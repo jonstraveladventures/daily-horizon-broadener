@@ -1,0 +1,56 @@
+# Daily Horizon — AI-written, human-reviewed essays.
+# Ordinary search crawlers are welcome. The content is machine-generated, so
+# AI training / bulk-scraping crawlers are asked not to ingest it: publishing
+# AI text back into AI training sets is the feedback loop this site is trying
+# not to feed. These directives only work for crawlers that choose to honour them.
+
+User-agent: *
+Allow: /
+
+# AI training / large-scale scraping crawlers — opt out.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+Sitemap: https://jonstraveladventures.github.io/daily-horizon-broadener/feed.xml
