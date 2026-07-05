@@ -21,11 +21,17 @@ stays clear whose work this is.
 A note on the obvious risk. As more of the web is written by machines, there is a
 danger of a closed loop: AI drawing on AI, citing text no person ever checked,
 drifting a little further from the world with each pass. This site tries not to
-feed that loop. Every essay is grounded in primary or established human sources
-that were actually opened and read for the piece, never in other AI-generated
-writing; any claim that cannot be traced to a real, human-checkable source is cut
-rather than dressed up; and a person reads each one before it goes up. The
-AI-written label on every page is part of the same effort, so that neither a
-reader nor another machine mistakes these essays for an independent human source
-and passes them on as one. The loop is real, and the honest thing to say is that
-these steps reduce it, not that they end it.
+feed that loop, but it cannot claim to have beaten it, and it is worth saying why.
+There is no reliable way to tell whether a given web page was written by a person
+or a machine; the tools that claim to detect it do not work. So the defence here
+is not certainty but a stack of imperfect proxies: preferring the primary document
+or dataset over any summary of it; leaning on sources with a human chain of
+accountability, like peer-reviewed papers, museums, archives and established
+reference works; favouring material that predates the recent wave of generative
+AI, which is unlikely to be machine-written; and cross-checking a surprising claim
+against more than one independent source. On top of that a person reads each essay
+before it goes up, and every page is labelled AI-written so it is not mistaken
+downstream for an independent human source. None of this is proof. A false claim
+copied across many sources, which happened long before AI and which AI now does
+faster, can still pass through looking perfectly well-sourced. The honest position
+is that these steps lower the odds, not that they close the loop.
